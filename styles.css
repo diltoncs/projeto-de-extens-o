@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Resetando margens e padding para todos os elementos */
+
+
+/* Estilos gerais da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #b2cc3c;
+  color: #070707;
+}
+
+/* Estilos do header */
+header {
+  background-color: #007BFF;
+  color: rgb(19, 14, 14);
+  text-align: center;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos da navegação */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(228, 231, 9);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Estilos do conteúdo */
+#content {
+  padding: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: rgb(77, 39, 212);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos do footer */
+footer {
+  background-color: #333;
+  color: rgb(20, 223, 64);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos responsivos - Tela pequena */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  input[type="text"], button {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  header {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
